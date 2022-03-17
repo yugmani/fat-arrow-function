@@ -46,3 +46,17 @@ let product = (x, y)=>{
 
 console.log(product(2, 3));   //6
 
+// Tasks
+// ********************************
+
+// Replace Function Expressions with arrow functions in the code below:
+let ask = (question, yes, no)=>{
+if(confirm(question)) yes();
+else no();
+}
+
+ask(
+  "Do you agree?",
+  ()=>alert('You agreed.'),
+  ()=>alert('You canceled the execution.')
+)
